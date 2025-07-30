@@ -73,6 +73,7 @@ public class TossItem extends ViewItem implements iRetry{
         again = in.nextLine();
         if (again.equalsIgnoreCase("y")) {
             PutItem pi = new PutItem();
+            System.out.print("\nAdventurers Box > Toss Item > Bag");
             pi.getItemFromBag(tossItem, myItem.getId(), myItem.getName());
             viewBag();
             System.out.println("You threw x" + tossItem + " " + myItem.getName() + " away..");
